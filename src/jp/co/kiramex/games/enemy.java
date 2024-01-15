@@ -20,7 +20,11 @@ public class enemy extends Character {
 
     //引数ありのコンストラクタ
     public enemy(String name, int hp, int offence, int defence, String type) {
-        super(name, hp, offence, defence);
+        //super(name, hp, offence, defence);
+        super.setName(name);
+        super.setHp(hp);
+        super.setOffence(offence);
+        super.setDefence(defence);
         this.type = type;
     }
 

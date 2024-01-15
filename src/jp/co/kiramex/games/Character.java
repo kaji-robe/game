@@ -4,25 +4,25 @@ public class Character {
     // フィールド
     private String name; // キャラクター名
     private int hp;      // ヒットポイント(HP)
-    private int offense; // 攻撃力
-    private int defense; // 防御力
+    private int offence; // 攻撃力
+    private int defence; // 防御力
 
     // 引数なしのコンストラクタ（念のため記述しただけなので中身は空でOK）
     public Character() {
     }
 
     // 引数ありのコンストラクタ
-    public Character(String name, int hp, int offense, int defense) {
+    public Character(String name, int hp, int offence, int defence) {
         this.name = name;
         this.hp = hp;
-        this.offense = offense;
-        this.defense = defense;
+        this.offence = offence;
+        this.defence = defence;
     }
 
     // 相手に攻撃するメソッド（引数には攻撃する相手のオブジェクトを指定）
     public void attackAction(Character opponent) {
         // 自分の攻撃力と相手の防御力の差をダメージ量とする
-        int damage = this.offense - opponent.defense;
+        int damage = this.offence - opponent.defence;
 
         // ダメージ量の計算結果がプラスかどうか
         if (damage > 0) {
@@ -51,19 +51,21 @@ public class Character {
         this.hp = hp;
     }
 
-    public int getOffense() {
-        return offense;
+    public int getOffence() {
+        return offence;
     }
 
-    public void setOffense(int offense) {
-        this.offense = offense;
+    public void setOffence(int offence) {
+        this.offence = offence;
     }
 
-    public int getDefense() {
-        return defense;
+    public int getDefence() {
+        return defence;
     }
 
-    public void setDefense(int defense) {
-        this.defense = defense;
+    public void setDefence(int defence) {
+        this.defence = defence;
     }
-}
+
+
+    }
