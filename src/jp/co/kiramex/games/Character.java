@@ -1,3 +1,5 @@
+//test
+
 package jp.co.kiramex.games;
 
 public class Character {
