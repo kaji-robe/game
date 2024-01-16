@@ -43,7 +43,6 @@ public void attackAction(Character opponent) {
 }
 }
 
-
 //魔法攻撃
 @Override
 public void magic_attack(Character opponent) {
