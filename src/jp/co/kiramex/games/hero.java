@@ -12,13 +12,10 @@ public class hero extends Character implements MagicAttack{
     public void setWeapon(int weapon) {
         this.weapon = weapon;
     }
-
-
     //引数なしのコンストラクタ
     public hero() {
 
     }
-
     //引数有りのコンストラクタ
     public hero(String name, int hp, int offence, int defence, int weapon) {
         //super(name,hp,offence,defence);
